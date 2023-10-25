@@ -6,20 +6,24 @@ const { BlacklistModel } = require("../models/blacklist_model");
 const { UserModel } = require("../models/user_model");
 
 userRouter.post("/register",async(req,res)=>{
-    let {name,role,email,password}=req.body;
+    let {name,team,role,email,password}=req.body;
     try {
         let user=await UserModel.findOne({email});
         if(user){
-            res.status(400).send({msg:"User is already exist"});
+            return res.status(400).send({msg:"User is already exist"});
         }
-        else{
-            bcrypt.hash(password,5,async function(err,hash){
-                let user=new UserModel({name,role,email,password:hash});
+        let isTeamPresent=await UserModel.findOne({team})
+        // console.log(isTeamPresent);
+        if(role=="User" && isTeamPresent==null){
+            return res.status(400).send({msg:"Admin is not created these Team"});
+        }
+        bcrypt.hash(password,5,async function(err,hash){
+                let user=new UserModel({name,team,role,email,password:hash});
                 await user.save();
                 res.status(200).send({msg:"Register Successfull"});
-            })
+        })
             
-        }
+        
         
     } catch (error) {
         res.status(200).send({msg:error.message});

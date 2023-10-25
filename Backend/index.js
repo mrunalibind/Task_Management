@@ -1,13 +1,13 @@
 // Backend deployment Link : https://agreeable-buckle-foal.cyclic.app
 
 let express=require("express");
-let port=process.env.port||8060;
 const { connection } = require("./db");
 let cookie=require("cookie-parser");
 const { userRouter } = require("./routes/user_route");
 const { taskRouter } = require("./routes/task_route");
 let app=express();
-require("dotenv").config()
+require("dotenv").config();
+let port=process.env.port||8050;
 app.use(express.json());
 app.use(cookie());
 app.use("/user",userRouter);
