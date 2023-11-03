@@ -1,0 +1,59 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/task.css">
+</head>
+<body>
+    <!-- NavBar -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a class="tasks" >Tasks</a>
+    <a class="tasks" href="#contact">Notification</a>
+    <a class="tasks" href="../index.html">Logout</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Task Container -->
+  <h1 id="heading">Team Member Tasks</h1>
+  <h3 id="teamHead">Team : <span id="teamName"></span></h3>
+
+  <div id="createTaskForm">
+    <form id="createForm">
+      <label for="fname">Title</label>
+      <input type="text" id="createTitle" placeholder="Enter Title for your task">
+  
+      <label for="lname">Task</label>
+      <input type="text" id="createTask" placeholder="Enter Task">
+    
+      <input type="submit" value="Create Task">
+    </form>
+  </div>
+
+  <h2 id="createMSG"></h2>
+
+  <div id="taskContainer"></div>
+
+  <div id="model">
+    <form id="modelForm">
+
+      <label>Title : </label>
+      <input type="text" name="" id="modelTitle">
+      <br>
+      <br>
+      <label>Task : </label>
+      <input type="text" name="" id="modelTask">
+      <br>
+      <br>
+      <input id="modelSaveBTN" type="submit" value="Save">
+      <!-- <button id="modelCancelBTN">Cancel X</button> -->
+    </form>
+  </div>
+</body>
+<script src="../scripts/task.js"></script>
+</html>
