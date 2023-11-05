@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Team Member Tasks</title>
     <link rel="stylesheet" href="../styles/index.css">
     <link rel="stylesheet" href="../styles/task.css">
 </head>
@@ -37,6 +37,18 @@
 
   <h2 id="createMSG"></h2>
 
+  <br>
+  <div id="indicate">
+    <div>
+      <div><button id="f">0</button></div>
+      <div><p>Task Created By you</p></div>
+    </div>
+    <div>
+      <div><button id="s">0</button></div>
+      <div><p>Task Created By others</p></div>
+    </div>
+  </div>
+
   <div id="taskContainer"></div>
 
   <div id="model">
@@ -54,6 +66,20 @@
       <!-- <button id="modelCancelBTN">Cancel X</button> -->
     </form>
   </div>
+
+  <!-- pagination buttons -->
+  <div id="paginationDiv">
+    <div>
+      <button id="subBTN">-</button>
+    </div>
+    <div>
+      <button id="pageNumberButton">1</button>
+    </div>
+    <div>
+      <button id="addBTN">+</button>
+    </div>
+  </div>
+  <br><br>
 </body>
 <script src="../scripts/task.js"></script>
 </html>

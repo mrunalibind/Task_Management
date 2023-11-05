@@ -6,6 +6,40 @@
 
 /* Task CSS */
 
+#indicate{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: end;
+    
+}
+#f{
+    background-color: rgb(180, 186, 231);
+    color: rgb(180, 186, 231);
+    padding: 8px 12px;
+    border: none;
+}
+#s{
+    background-color: rgb(131, 214, 214);
+    color: rgb(131, 214, 214);
+    padding: 8px 12px;
+    border: none;
+}
+#indicate>div{
+    
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+    width: 20%;
+    align-items: center;
+}
+#indicate p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
 #teamHead{
     text-align: center;
     margin: 20px 0px;
@@ -26,7 +60,7 @@
 #taskContainer>div{
     display: flex;
     
-    background-color: rgb(180, 186, 231);
+    /* background-color: rgb(131, 214, 214); */
     border-radius: 5px;
     justify-content: space-between;
     margin: 30px 0px;
@@ -70,6 +104,11 @@
     }
     #taskContainer>div button{
         margin-top: 20px;
+    }
+    #paginationDiv{
+        width: 80%;
+        
+
     }
 }
 
@@ -158,4 +197,47 @@
   #createMSG{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+  }
+
+  /* Pagination Style */
+  #paginationDiv{
+    display: flex;
+    width: 30%;
+    margin: auto;
+    justify-content: space-between;
+  }
+
+  #paginationDiv button:nth-child(1){
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-size: 20px;
+    background-color: rgb(161, 186, 215);
+    cursor: pointer;
+  }
+
+  #pageNumberButton{
+    background-color: rgb(32, 68, 111) !important;
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+    /* font-weight: 400; */
+    cursor: pointer;
+  }
+
+  #paginationDiv button:hover{
+    box-shadow: rgba(11, 123, 154, 0.25) 0px 54px 55px, rgb(15, 67, 126, 0.40) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(13, 124, 155, 0.17) 0px 12px 13px, rgba(14, 105, 162, 0.09) 0px -3px 5px;    
+  }
+  #paginationDiv button:nth-child(3){
+    padding: 5px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    font-size: 20px;
+    background-color: rgb(161, 186, 215);
+    cursor: pointer;
   }
