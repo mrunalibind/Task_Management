@@ -112,6 +112,17 @@
     }
 }
 
+@media screen and (max-width:950px){
+    #indicate{
+        flex-direction: column;
+        
+    }
+    #indicate>div{
+        margin: 10px 0px;
+    }
+    
+}
+
 
 #model{
     display: none;
