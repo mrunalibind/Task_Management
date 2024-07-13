@@ -1,5 +1,3 @@
-
-
 let taskContainer = document.getElementById("taskContainer");
 let teamName = document.getElementById("teamName");
 let model = document.getElementById("model");
@@ -28,7 +26,7 @@ let loginUserId;
 retrieveData()
 function retrieveData() {
     console.log(pageNumberButton.innerText)
-    fetch(`https://wandering-tick-suit.cyclic.app/task/pagination?page=${pageNumberButton.innerText}`, {
+    fetch(`https://securityboat-deploy.onrender.com/task/pagination?page=${pageNumberButton.innerText}`, {
         method: "GET",
         headers: headers
     })
@@ -132,7 +130,7 @@ function removeTask(id) {
 
 
 
-    fetch(`https://wandering-tick-suit.cyclic.app/task/remove/${id}`, {
+    fetch(`https://securityboat-deploy.onrender.com/task/remove/${id}`, {
         method: "DELETE",
         headers: headers
     })
@@ -162,7 +160,7 @@ function updateTask(ele) {
     }
     console.log(updateformData);
 
-    fetch(`https://wandering-tick-suit.cyclic.app/task/update/${ele._id}`, {
+    fetch(`https://securityboat-deploy.onrender.com/task/update/${ele._id}`, {
         method: "PATCH",
         headers: {
             'Content-Type': 'application/json',
@@ -220,7 +218,7 @@ function createTask(createformData) {
 
     console.log(createformData);
 
-    fetch(`https://wandering-tick-suit.cyclic.app/task/create`, {
+    fetch(`https://securityboat-deploy.onrender.com/task/create`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',

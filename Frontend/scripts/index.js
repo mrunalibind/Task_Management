@@ -50,7 +50,7 @@ registerForm.addEventListener("submit", (e) => {
     email: registerForm.regemail.value,
     password: registerForm.regpassword.value,
   }
-  fetch("https://wandering-tick-suit.cyclic.app/user/register", {
+  fetch("https://securityboat-deploy.onrender.com/user/register", {
     method: 'POST',
     headers: {
       "Content-Type": "application/json",
@@ -77,7 +77,7 @@ loginUserForm.addEventListener("submit", (e) => {
     password: loginUserForm.logpassword.value
   }
   console.log(formData);
-  fetch("https://wandering-tick-suit.cyclic.app/user/login", {
+  fetch("https://securityboat-deploy.onrender.com/user/login", {
     method: 'POST',
     headers:{
       "Content-type":"application/json"
