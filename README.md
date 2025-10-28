@@ -7,6 +7,8 @@ A real-time collaborative task management system where team members can manage t
 
 **Client:** 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)&nbsp;
+![React](https://img.shields.io/badge/React-blue?logo=react&logoColor=white&style=for-the-badge)
+
 
 **Server:** 
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)&nbsp;
